@@ -1,0 +1,8 @@
+{
+    "rewrites": [
+        {
+            "source": "/graphql",
+            "destination": "https://demo2.tyrescart.ae/graphql"
+        }
+    ]
+}
