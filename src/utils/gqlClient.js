@@ -1,14 +1,14 @@
 import { GraphQLClient } from 'graphql-request'
 
-// In production on Vercel — use relative /graphql (Vercel proxies it)
-// In local dev — Vite proxy handles it (vite.config.js)
-const GQL_URL = import.meta.env.VITE_GRAPHQL_URL || '/graphql'
+const GRAPHQL_URL = import.meta.env
+    ? `${window.location.origin}/graphql`
+    : import.meta.env.VITE_GRAPHQL_URL
 
-const gqlClient = new GraphQLClient(GQL_URL, {
-    headers: {
-        'Content-Type': 'application/json',
-        'Store': 'default',
-    },
-})
+if (!GRAPHQL_URL) {
+    throw new Error('VITE_GRAPHQL_URL is not configured')
+}
+
+const gqlClient = new GraphQLClient(GRAPHQL_URL)
 
 export default gqlClient
+
