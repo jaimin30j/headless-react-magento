@@ -16,7 +16,7 @@ export default function Home() {
                 {/* Background Image Template Placement */}
                 <div className="max-sm:w-full max-sm:aspect-video absolute inset-0 opacity-40">
                     <img
-                        src="../src/assets/images/home-main.jpg"
+                        src="/images/home-main.jpg"
                         alt="New Collection Background"
                         className="h-full w-full object-cover object-center"
                     />
@@ -60,7 +60,7 @@ export default function Home() {
                     {/* Category 1 */}
                     <div className="group relative h-96 w-full overflow-hidden rounded-lg bg-white shadow sm:aspect-h-3 sm:aspect-w-2 lg:aspect-h-4 lg:aspect-w-3">
                         <img
-                            src="../src/assets/images/home-pants.jpg"
+                            src="/images/home-pants.jpg"
                             alt="Apparel Category"
                             className="h-full w-full object-cover object-center group-hover:scale-105 transition duration-300"
                         />
@@ -74,7 +74,7 @@ export default function Home() {
                     {/* Category 2 */}
                     <div className="group relative h-96 w-full overflow-hidden rounded-lg bg-white shadow">
                         <img
-                            src="../src/assets/images/accessories.jpg"
+                            src="/images/accessories.jpg"
                             alt="Accessories Category"
                             className="h-full w-full object-cover object-center group-hover:scale-105 transition duration-300"
                         />
@@ -91,7 +91,7 @@ export default function Home() {
                     <div className="group relative h-96 w-full overflow-hidden rounded-lg bg-white shadow">
 
                         <img
-                            src="../src/assets/images/watches.jpg"
+                            src="/images/watches.jpg"
                             alt="Footwear Category"
                             className="h-full w-full object-cover object-center group-hover:scale-105 transition duration-300"
                         />

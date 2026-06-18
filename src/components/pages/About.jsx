@@ -3,7 +3,7 @@ export default function About() {
         <div className="sm:flex items-center max-w-[1320px] mx-auto">
             <div className="sm:w-1/2 p-10">
                 <div className="image object-center text-center">
-                    <img src="../src/assets/images/about.png" />
+                    <img src="/images/about.png" />
                 </div>
             </div>
             <div className="sm:w-1/2 p-5">
