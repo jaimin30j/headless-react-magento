@@ -1,6 +1,6 @@
 import { GraphQLClient } from 'graphql-request'
 
-const GRAPHQL_URL = import.meta.env.DEV
+const GRAPHQL_URL = import.meta.env.VITE_GRAPHQL_URL
     ? `${window.location.origin}/graphql`
     : import.meta.env.VITE_GRAPHQL_URL
 
